@@ -169,6 +169,7 @@ body{
 
 .nurse-img{
   position: relative;
+  padding-top: 3rem;
   height: 700px;
   filter: drop-shadow(0 0 2px black);
   bottom: 0;
