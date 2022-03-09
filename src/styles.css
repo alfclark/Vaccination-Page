@@ -194,8 +194,6 @@ body{
 .schedule-msg{
   display: flex;
   align-items: center;
-  border-bottom: solid var(--navy-blue);
-  width: 100%;
   justify-content: center;
 }
 
