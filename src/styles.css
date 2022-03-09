@@ -405,25 +405,23 @@ body{
     border-radius: 5px;
   }
   .schedule-element{
-    padding: 1rem;
+    padding-right: .4rem;
   }
   .schedule-element .element .fa-solid{
     color: var(--cool-blue);
     background-color: var(--cool-blue-soft);
     padding: .5rem;
     border-radius: 5px;
-    font-size: .7rem;
+    font-size: .5rem;
   }
   .schedule-element .element h3{
     color: var(--grey);
     padding-left: .5rem;
-    font-size: .7rem;
+    font-size: 1rem;
   }
   .schedule-element h2{
     color: var(--navy-blue);
-    padding-left: .5rem;
     font-size: .5rem;
-    margin-top: -.2rem;
     padding-left: 2rem;
   }
   .appointment-btn{
