@@ -17,6 +17,8 @@
 
 body{
   font-family: 'Roboto', sans-serif;
+  background-image: url(/images/BG.png);
+  background-size: 100%;
 }
 
 /*----------ANIMATIONS------------------*/
@@ -176,6 +178,7 @@ body{
 .schedule-banner{
   position: relative;
   bottom: 5rem;
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -282,6 +285,7 @@ body{
 .reasons {
   padding-top: 2rem;
   padding-left: 10rem;
+  width: 100%;
 }
 
 .why{
@@ -295,15 +299,19 @@ body{
 
 .why p{
   color: var(--grey);
+  width: 70%;
 }
 
 .reasons-cards{
   display: flex;
+  width: 100%;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card{
-  height: 15rem;
+  height: 17rem;
+  background-color: white;
   width: 12rem;
   display: flex;
   flex-direction: column;
@@ -321,6 +329,21 @@ body{
   transition: .3s;
 }
 
+.card i{
+  color: var(--cool-blue);
+  font-size: 1.5rem;
+  background-color: var(--cool-blue-soft);
+  padding: .7rem;
+  border-radius: .5rem;
+}
+
+.card h2 {
+  color: var(--navy-blue);
+}
+
+.card p{
+  color: var(--grey);
+}
 
 /*----------------------RESPONSIVE CONFIG----------------*/
 @media screen and (max-width: 900px) {
@@ -380,10 +403,75 @@ body{
     padding: .5rem;
     border-radius: 5px;
   }
+  .schedule-element{
+    padding: 1rem;
+  }
+  .schedule-element .element .fa-solid{
+    color: var(--cool-blue);
+    background-color: var(--cool-blue-soft);
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: .7rem;
+  }
+  .schedule-element .element h3{
+    color: var(--grey);
+    padding-left: .5rem;
+    font-size: .7rem;
+  }
+  .schedule-element h2{
+    color: var(--navy-blue);
+    padding-left: .5rem;
+    font-size: .5rem;
+    margin-top: -.2rem;
+    padding-left: 2rem;
+  }
+  .appointment-btn{
+    padding-left: 1rem;
+  }
+  .make-appointment{
+    font-size: .7rem;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px black;
+  }
+  /* VACCINE MAKERS SECTION */
   .vaccine-makers img{
     width: 5rem;
     filter: grayscale(100%);
     opacity: 40%;
     padding-left: 1rem;
+  }
+  /* BENEFITS SECTION */
+  .reasons {
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+  .card{
+    height: 14rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: solid 1px #25698d70;
+  } 
+  .card i{
+    font-size: 1rem;
+  }
+  
+  .card h2 {
+    font-size: 1.2rem;
+  }
+  
+  .card p{
+    font-size: .9rem;
   }
 }
