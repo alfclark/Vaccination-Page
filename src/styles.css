@@ -169,7 +169,8 @@ body{
 
 .nurse-img{
   position: relative;
-  padding-top: 3rem;
+  padding-top: 5rem;  
+  padding-left: 5rem;
   height: 700px;
   filter: drop-shadow(0 0 2px black);
   bottom: 0;
@@ -214,6 +215,7 @@ body{
 .schedule{
   display: flex;
   align-items: center;
+  padding-top: -10rem;
 }
 
 .schedule-element{
@@ -343,6 +345,121 @@ body{
 .card p{
   color: var(--grey);
 }
+
+/*-----------------PREPARATIONS SECTION------------------*/
+.preparations-section{
+  position: static;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.preparations{  
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LEFT SIDE RECOMENDATIONS */
+.prep-left{
+  display: flex;
+  background-image: linear-gradient(to left, var(--grad-right) , var(--grad-left));
+  left: 0;
+  width: 50%;
+  text-align: center;
+  align-items: center;
+}
+
+.prep-img{
+  position: relative;
+  padding-top: 3rem;
+  height: 600px;
+  filter: drop-shadow(0 0 2px black);
+  bottom: 0;
+  padding-left: 7rem;
+  padding-right: 2rem;
+}
+
+/* RIGHT SIDE RECOMENDATIONS */
+.prep.right{
+  justify-content: center;
+  width: 50%;
+  padding-top: 5rem;
+}
+
+.prep-right-content {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.prep-right-content h1{
+  font-size: 3rem;
+  color: var(--navy-blue);
+  font-weight: bolder;
+}
+
+.land-hello p{
+  font-size: 1.2rem;
+  color: var(--grey);
+}
+
+.features{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 4rem;
+}
+
+.feature{
+  display: flex;
+  align-items: center;
+}
+
+.feature h3{
+  font-size: 1rem;
+  padding: .3rem;
+}
+
+.feature .fa-solid{
+  font-size: 1rem;
+  color: var(--gold);
+  padding: .3rem;
+  background-color: var(--gold-soft);
+  border-radius: 2px;
+}
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
 
 /*----------------------RESPONSIVE CONFIG----------------*/
 @media screen and (max-width: 900px) {
