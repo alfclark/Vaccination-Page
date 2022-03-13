@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+*{
+  margin: 0;
+}
+
 :root{
   --white: rgba(255, 255, 255, 0.904);
   --blue: #3757d5;
@@ -24,7 +28,7 @@ body{
 /*----------ANIMATIONS------------------*/
 @keyframes bounce1 {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-20px); }
+  50%  { transform: translateY(-1.5rem); }
   100% { transform: translateY(0); }
 }
 
@@ -39,21 +43,22 @@ body{
   right: 0;
   z-index: 2;
   position: fixed;
+  padding: 1rem;
 }
 
 .logo{
   width: 9rem;
-  padding-left: 70px;
+  padding-left: 6rem;
 }
 
 .navbar-menu ul {
   display: flex;
   list-style: none;
-  padding-right: 70px;
+  padding-right: 1rem;
 }
 
 .menu-item{
-  margin: 20px;
+  margin: 1.5rem;
   font-weight: bold;
 }
 
@@ -68,7 +73,7 @@ body{
 }
 
 .menu-btn {
-  margin: 10px;
+  margin: .75rem;
 }
 
 .btn-navbar{
@@ -76,7 +81,7 @@ body{
   background-color: var(--blue);
   color: white;
   cursor: pointer;
-  padding: 10px 15px;
+  padding: 1rem;
   font-weight: bold;
   border-radius: 4px;
   box-shadow: 1px 1px 5px black;
@@ -111,7 +116,8 @@ body{
 .land-left{
   justify-content: center;
   width: 50%;
-  padding-top: 5rem;
+  padding-top: 10rem;
+  padding-left: 2rem;
 }
 
 .land-hello {
@@ -123,11 +129,13 @@ body{
   font-size: 4.5rem;
   color: var(--navy-blue);
   font-weight: bolder;
+  padding-bottom: 1rem;
 }
 
 .land-hello p{
   font-size: 1.2rem;
   color: var(--grey);
+  padding-bottom: 1rem;
 }
 
 .features{
@@ -169,9 +177,9 @@ body{
 
 .nurse-img{
   position: relative;
-  padding-top: 5rem;  
+  padding-top: 9rem;  
   padding-left: 5rem;
-  height: 700px;
+  height: 80vh;
   filter: drop-shadow(0 0 2px black);
   bottom: 0;
 }
@@ -184,11 +192,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 10px;
+  padding: 1rem 4rem 1rem 4rem;
+  border-radius: 1rem;
   box-shadow: 1px 13px 36px -7px rgba(0,0,0,0.72);
-  background-color: rgba(255, 255, 255, 0.705);
+  background-color: rgba(255, 255, 255, 0.9);
   animation: bounce1 4s infinite;
 }
 
@@ -196,6 +203,9 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: .5rem;
+  border-bottom: solid 1px var(--cool-blue-soft);
+  width: 90%;
 }
 
 .schedule-msg h2{
@@ -205,7 +215,7 @@ body{
 }
 
 .schedule-msg .fa-solid{
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--cool-blue);
   background-color: var(--cool-blue-soft);
   padding: .5rem;
@@ -215,11 +225,10 @@ body{
 .schedule{
   display: flex;
   align-items: center;
-  padding-top: -10rem;
 }
 
 .schedule-element{
-  padding: 10px 20px 0px 20px;
+  padding: 1rem 2rem;
 }
 
 .schedule-element .element{
@@ -231,7 +240,7 @@ body{
   color: var(--cool-blue);
   background-color: var(--cool-blue-soft);
   padding: .5rem;
-  border-radius: 5px;
+  border-radius: .2rem;
 }
 
 .schedule-element .element h3{
@@ -249,7 +258,7 @@ body{
 }
 
 .appointment-btn{
-  padding-left: 50px;
+  padding-left: 4rem;
 }
 
 .make-appointment{
@@ -257,7 +266,7 @@ body{
   background-color: var(--blue);
   color: white;
   cursor: pointer;
-  padding: 10px 30px;
+  padding: 1rem 4rem;
   font-weight: bold;
   border-radius: 4px;
   box-shadow: 1px 1px 5px black;
@@ -273,6 +282,7 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .vaccine-makers img{
@@ -296,11 +306,13 @@ body{
 .why h2{
   font-size: 2rem;
   color: var(--navy-blue);
+  padding: 1rem;
 }
 
 .why p{
   color: var(--grey);
   width: 70%;
+  padding: 1rem;
 }
 
 .reasons-cards{
@@ -322,11 +334,15 @@ body{
   border-radius: 1rem;
   cursor: pointer;
   border: solid 1px #25698d70;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card:hover {
   box-shadow: 1px 13px 36px -7px var(--navy-blue);
-  transform: translate(0, 10px);
+  transform: translate(0, 1rem);
   transition: .3s;
 }
 
@@ -340,6 +356,7 @@ body{
 
 .card h2 {
   color: var(--navy-blue);
+  padding-top: .3rem;
 }
 
 .card p{
@@ -371,6 +388,7 @@ body{
   display: flex;
   background-image: linear-gradient(to left, var(--grad-right) , var(--grad-left));
   left: 0;
+  height: 100%;
   width: 50%;
   text-align: center;
   align-items: center;
@@ -379,7 +397,7 @@ body{
 .prep-img{
   position: relative;
   padding-top: 3rem;
-  height: 600px;
+  height: 30rem;
   filter: drop-shadow(0 0 2px black);
   bottom: 0;
   padding-left: 7rem;
@@ -402,62 +420,128 @@ body{
   font-size: 3rem;
   color: var(--navy-blue);
   font-weight: bolder;
+  padding: 1rem;
 }
 
-.land-hello p{
-  font-size: 1.2rem;
+.prep-right-content p{
+  font-size: 1.1rem;
   color: var(--grey);
+  padding: 1rem;
 }
 
-.features{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 4rem;
-}
-
-.feature{
-  display: flex;
-  align-items: center;
-}
-
-.feature h3{
-  font-size: 1rem;
-  padding: .3rem;
-}
-
-.feature .fa-solid{
-  font-size: 1rem;
-  color: var(--gold);
-  padding: .3rem;
-  background-color: var(--gold-soft);
-  border-radius: 2px;
+.recomendation{
+  padding-bottom: .3rem;
+  box-shadow: 1px 1px 36px -7px var(--navy-blue);
 }
 
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: white;
+  color: var(--navy-blue);
   cursor: pointer;
-  padding: 18px;
+  padding: 1rem;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.active, .collapsible:hover {
+.collapsible:hover {
   background-color: #ccc;
 }
 
 .content {
-  padding: 0 18px;
+  padding: .2rem 1rem;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
 }
+
+/*-----------------------EMERGENCY SECTION---------------*/
+.emergency-section{
+  padding-top: 2rem;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+.emergency-left{
+  width: 50%;
+  padding: 2rem;
+}
+.emergency-left h1{
+  font-size: 3rem;
+  color: var(--navy-blue);
+  font-weight: bolder;
+  padding: 1rem;
+}
+.emergency-left p{
+  font-size: 1.1rem;
+  color: var(--grey);
+  padding: 1rem;
+}
+.emergency-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.emergency-card{
+  padding: 3rem;
+  margin: 1rem;
+  border: solid 1px var(--cool-blue-soft);
+  width: 8rem;
+  border-radius: 1rem; 
+  box-shadow: 1px 1px 36px -20px var(--navy-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  color: var(--navy-blue);
+}
+.card-title p{
+  color: var(--navy-blue);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.emergency-card button{
+  border: none;
+  padding: .5rem 1rem;
+  background-color: var(--cool-blue-soft);
+  color: var(--cool-blue);
+  border-radius: .5rem;
+  font-size: .9rem;
+  cursor: pointer;
+}
+.emergency-card button:hover{
+  background-color: var(--cool-blue);
+  color: var(--cool-blue-soft);
+  transition: .4s;
+}
+.emergency-card:hover{
+  box-shadow: 1px 1px 36px -10px var(--navy-blue);
+  transform: scale(1.1);
+  transition: .5s;
+}
+.emergency-right{
+  display: flex;
+  width: 50%;
+  background-image: linear-gradient(to left, var(--grad-right) , var(--grad-left));
+  justify-content: center;
+}
+.emergency-image{
+  height: 40rem;
+  position: relative;
+  padding-top: 3rem;
+  filter: drop-shadow(0 0 2px black);
+  bottom: 0;
+}
+
 
 
 
@@ -466,7 +550,7 @@ body{
   /* NAVBAR */
   .logo{
     width: 9rem;
-    padding-left: 10px;
+    padding-left: 2rem;
   }
   .menu-item {
     display: none;
@@ -476,7 +560,7 @@ body{
   }
   /* LEFT SIDE LANDSCREEN */
   .land-hello {
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-right: 1rem;
   }
   .land-hello h1{
@@ -548,7 +632,7 @@ body{
     background-color: var(--blue);
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: .75rem;
     font-weight: bold;
     border-radius: 4px;
     box-shadow: 1px 1px 5px black;

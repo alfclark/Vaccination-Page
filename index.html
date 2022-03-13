@@ -27,7 +27,7 @@
   </div>
 
   <!-- LANDING PAGE -->
-  <div class="landing-page">
+  <section class="landing-page">
     <div class="landing">
       <div class="land-left">
         <div class="land-hello">
@@ -83,18 +83,18 @@
         </div>
       </div>
     </div>
-  </div>
+    </section>
 
   <!-- VACCINE MAKERS -->
-  <div class="vaccine-makers">
+  <section class="vaccine-makers">
     <img src="/logos/astra-zeneca.svg" alt="">
     <img src="/logos/pfizer.svg" alt="">
     <img src="/logos/sinovac.svg" alt="">
     <img src="logos/moderna.svg" alt="">
-  </div>
+</section>
 
   <!-- REASONS TO GET VACCINATED -->
-  <div class="reasons">
+  <section class="reasons">
     <div class="why">
       <h2>Why should I get vaccinated?</h2>
       <p>In order do avoid any doubts about getting the COVID-19 vaccine, identify the following benefits of COVID-19 Vaccination:</p>
@@ -121,11 +121,11 @@
         <p>The vaccine also helps to reduce the mutation of the virus, increasing the chance to achieve a herd immunity.</p>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- PREPARATIONS BEFORE VACCINE -->
-  <div class="preparations-section">
-    <div class="preparations">
+  <section class="preparations-section">
+    <ction class="preparations">
       <div class="prep-left">
         <img class="prep-img" src="/images/nurse3.png" alt="">
       </div>
@@ -135,15 +135,83 @@
           <p>The success of vaccines is strongly influenced by the strength of the body's immune system. Therefore there are several 
             things that can be tried to make the COVID-19 vaccine work:
           </p>
-          <div>
-            <button type="button" class="collapsible">Avoid alcoholic beverages</button>
+          <!-- COLLAPSIBLE BUTTONS RECOMENDATIONS -->
+          <div class="recomendation">
+            <button type="button" class="collapsible">Avoid alcoholic beverages<i id="coll-btn" class="fa-solid fa-square-caret-down"></i></i></button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
           </div>
-          <div class="content">
-            <p>Lorem, ipsum dolor sit amet consectetur ...</p>
+          <div class="recomendation">
+            <button type="button" class="collapsible">Avoid stress<i id="coll-btn" class="fa-solid fa-square-caret-down"></i></button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="recomendation">
+            <button type="button" class="collapsible">Eat healthy food<i id="coll-btn" class="fa-solid fa-square-caret-down"></i></button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="recomendation">
+            <button type="button" class="collapsible">Get enough sleep<i id="coll-btn" class="fa-solid fa-square-caret-down"></i></button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="recomendation">
+            <button type="button" class="collapsible">Do exercise<i id="coll-btn" class="fa-solid fa-square-caret-down"></i></button>
+            <div class="content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
           </div>
         </div>
       </div>
+  </section>
+
+  <!-- EMERGENCY SECTION -->
+  <section class="emergency-section">
+    <div class="emergency-left">
+      <h1>Emergency Contact</h1>
+      <p>Contact any of the means below if you or anyone you know feel unwell or have similar symptoms as COVID-19. 
+        Make sure you also take care of yourself before reporting to us:
+      </p>
+      <div class="emergency-cards">
+        <div class="emergency-card">
+          <div class="card-title">
+            <i class="fa-solid fa-phone"></i>
+            <p>Call</p>
+          </div>
+          <button>Call Now</button>
+        </div>
+        <div class="emergency-card">
+          <div class="card-title">
+            <i class="fa-solid fa-comments"></i>
+            <p>Chat</p>
+          </div>
+          <button>Chat Now</button>
+        </div>
+        <div class="emergency-card">
+          <div class="card-title">
+            <i class="fa-solid fa-video"></i>
+            <p>Video Call</p>
+          </div>
+          <button>Call Now</button>
+        </div>
+        <div class="emergency-card">
+          <div class="card-title">
+            <i class="fa-solid fa-message"></i>
+            <p>Message</p>
+          </div>
+          <button>Message Now</button>
+        </div>
+      </div>
     </div>
+    <div class="emergency-right">
+      <img class="emergency-image" src="/images/nurse.png" alt="">
+    </div>
+  </section>
 <script src="/src/app.js"></script>
 </body>
 </html>
