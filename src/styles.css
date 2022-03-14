@@ -542,7 +542,57 @@ body{
   bottom: 0;
 }
 
-
+/*------------------------FOOTER--------------------------*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cool-blue-soft);
+  padding: 2rem 4rem;
+}
+.footer a, p{
+  text-decoration: none;
+  color: var(--grey);
+  font-size: .8rem;
+}
+.footer a:hover{
+  color: #1f3e72;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+}
+.links h1{
+  font-size: 1.5rem;
+  color: var(--cool-blue);
+}
+.links h2{
+  font-size: 1.2rem;
+  color: var(--navy-blue);
+}
+.links p{
+  font-size: 1rem;
+  padding-top: .5rem;
+}
+.footer-right{
+  display: flex;
+}
+.footer-right-card{
+  display: flex;
+  flex-direction: column;
+  padding-left: 4rem;
+}
+.footer-right-card a{
+  padding-top: 1rem;
+}
+.credits{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  align-items: center;
+}
+.credits a{
+  padding-left: 2rem;
+}
 
 
 /*----------------------RESPONSIVE CONFIG----------------*/
