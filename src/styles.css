@@ -613,7 +613,8 @@ p {
 }
 
 /*------------------------------------------------------SCHEDULE PAGE------------------------------------------------------------------*/
-section {
+
+.schedule-panel {
   display: flex;
   margin-top: 10rem;
   margin-bottom: 5rem;
