@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-*{
+* {
   margin: 0;
 }
 
-:root{
+:root {
   --white: rgba(255, 255, 255, 0.904);
   --blue: #3757d5;
   --grey: rgb(112, 112, 112);
@@ -16,24 +16,31 @@
   --cool-blue-soft: #c1d3fa;
   --grad-right: #3661da;
   --grad-left: #0998e6;
+  --carbon: #232323;
 }
 
-
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   background-image: url(/images/BG.png);
   background-size: 100%;
 }
 
 /*----------ANIMATIONS------------------*/
 @keyframes bounce1 {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-1.5rem); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
+/*------------------------------------------------------LANDPAGE----------------------------------------------------------------------*/
 /*--------------NAVBAR---------------- */
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,7 +53,7 @@ body{
   padding: 1rem;
 }
 
-.logo{
+.logo {
   width: 9rem;
   padding-left: 6rem;
 }
@@ -57,26 +64,26 @@ body{
   padding-right: 1rem;
 }
 
-.menu-item{
+.menu-item {
   margin: 1.5rem;
   font-weight: bold;
 }
 
-.menu-item a{
+.menu-item a {
   text-decoration: none;
   color: var(--grey);
 }
 
-.menu-item a:hover{
+.menu-item a:hover {
   color: var(--blue);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .menu-btn {
-  margin: .75rem;
+  margin: 0.75rem;
 }
 
-.btn-navbar{
+.btn-navbar {
   border: none;
   background-color: var(--blue);
   color: white;
@@ -89,11 +96,11 @@ body{
 
 .btn-navbar:hover {
   background-color: var(--orange);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /*----------- SECTION LANDING PAGE----------------*/
-.landing-page{
+.landing-page {
   position: static;
   width: 100%;
   height: 100%;
@@ -107,13 +114,13 @@ body{
   z-index: 0;
 }
 
-.landing{  
+.landing {
   display: flex;
   justify-content: space-between;
 }
 
 /* LEFT SIDE LANDPAGE */
-.land-left{
+.land-left {
   justify-content: center;
   width: 50%;
   padding-top: 10rem;
@@ -125,20 +132,20 @@ body{
   padding-right: 9rem;
 }
 
-.land-hello h1{
+.land-hello h1 {
   font-size: 4.5rem;
   color: var(--navy-blue);
   font-weight: bolder;
   padding-bottom: 1rem;
 }
 
-.land-hello p{
+.land-hello p {
   font-size: 1.2rem;
   color: var(--grey);
   padding-bottom: 1rem;
 }
 
-.features{
+.features {
   display: flex;
   align-items: center;
   text-align: center;
@@ -147,45 +154,48 @@ body{
   padding-right: 4rem;
 }
 
-.feature{
+.feature {
   display: flex;
   align-items: center;
 }
 
-.feature h3{
+.feature h3 {
   font-size: 1rem;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
-.feature .fa-solid{
+.feature .fa-solid {
   font-size: 1rem;
   color: var(--gold);
-  padding: .3rem;
+  padding: 0.3rem;
   background-color: var(--gold-soft);
   border-radius: 2px;
 }
 
 /* RIGHT SIDE LANDPAGE */
-.land-right{
+.land-right {
   display: flex;
-  background-image: linear-gradient(to left, var(--grad-right) , var(--grad-left));
+  background-image: linear-gradient(
+    to left,
+    var(--grad-right),
+    var(--grad-left)
+  );
   left: 0;
   width: 50%;
   text-align: center;
   align-items: center;
 }
 
-.nurse-img{
+.nurse-img {
   position: relative;
-  padding-top: 9rem;  
+  padding-top: 9rem;
   padding-left: 5rem;
   height: 80vh;
-  filter: drop-shadow(0 0 2px black);
   bottom: 0;
 }
 
 /* SCHEDULE FORM LANDPAGE */
-.schedule-banner{
+.schedule-banner {
   position: relative;
   bottom: 5rem;
   width: 70%;
@@ -194,74 +204,74 @@ body{
   align-items: center;
   padding: 1rem 4rem 1rem 4rem;
   border-radius: 1rem;
-  box-shadow: 1px 13px 36px -7px rgba(0,0,0,0.72);
+  box-shadow: 1px 13px 36px -7px rgba(0, 0, 0, 0.72);
   background-color: rgba(255, 255, 255, 0.9);
   animation: bounce1 4s infinite;
 }
 
-.schedule-msg{
+.schedule-msg {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   border-bottom: solid 1px var(--cool-blue-soft);
   width: 90%;
 }
 
-.schedule-msg h2{
+.schedule-msg h2 {
   color: var(--navy-blue);
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   font-size: 1.5rem;
 }
 
-.schedule-msg .fa-solid{
+.schedule-msg .fa-solid {
   font-size: 1rem;
   color: var(--cool-blue);
   background-color: var(--cool-blue-soft);
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 5px;
 }
 
-.schedule{
+.schedule {
   display: flex;
   align-items: center;
 }
 
-.schedule-element{
+.schedule-element {
   padding: 1rem 2rem;
 }
 
-.schedule-element .element{
+.schedule-element .element {
   display: flex;
   align-items: center;
 }
 
-.schedule-element .element .fa-solid{
+.schedule-element .element .fa-solid {
   color: var(--cool-blue);
   background-color: var(--cool-blue-soft);
-  padding: .5rem;
-  border-radius: .2rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
 }
 
-.schedule-element .element h3{
+.schedule-element .element h3 {
   color: var(--grey);
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   font-size: 1rem;
 }
 
-.schedule-element h2{
+.schedule-element h2 {
   color: var(--navy-blue);
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   font-size: 1rem;
-  margin-top: -.2rem;
+  margin-top: -0.2rem;
   padding-left: 2rem;
 }
 
-.appointment-btn{
+.appointment-btn {
   padding-left: 4rem;
 }
 
-.make-appointment{
+.make-appointment {
   border: none;
   background-color: var(--blue);
   color: white;
@@ -274,18 +284,18 @@ body{
 
 .make-appointment:hover {
   background-color: var(--orange);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 /*------------------SECTION VACCINE MAKERS------------------- */
-.vaccine-makers{
+.vaccine-makers {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 2rem 1rem 2rem 1rem;
 }
 
-.vaccine-makers img{
+.vaccine-makers img {
   width: 15rem;
   filter: grayscale(100%);
   opacity: 40%;
@@ -299,30 +309,30 @@ body{
   width: 100%;
 }
 
-.why{
+.why {
   width: 30rem;
 }
 
-.why h2{
+.why h2 {
   font-size: 2rem;
   color: var(--navy-blue);
   padding: 1rem;
 }
 
-.why p{
+.why p {
   color: var(--grey);
   width: 70%;
   padding: 1rem;
 }
 
-.reasons-cards{
+.reasons-cards {
   display: flex;
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.card{
+.card {
   height: 17rem;
   background-color: white;
   width: 12rem;
@@ -343,28 +353,28 @@ body{
 .card:hover {
   box-shadow: 1px 13px 36px -7px var(--navy-blue);
   transform: translate(0, 1rem);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.card i{
+.card i {
   color: var(--cool-blue);
   font-size: 1.5rem;
   background-color: var(--cool-blue-soft);
-  padding: .7rem;
-  border-radius: .5rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
 }
 
 .card h2 {
   color: var(--navy-blue);
-  padding-top: .3rem;
+  padding-top: 0.3rem;
 }
 
-.card p{
+.card p {
   color: var(--grey);
 }
 
 /*-----------------PREPARATIONS SECTION------------------*/
-.preparations-section{
+.preparations-section {
   position: static;
   width: 100%;
   height: 100%;
@@ -378,15 +388,19 @@ body{
   z-index: 0;
 }
 
-.preparations{  
+.preparations {
   display: flex;
   justify-content: space-between;
 }
 
 /* LEFT SIDE RECOMENDATIONS */
-.prep-left{
+.prep-left {
   display: flex;
-  background-image: linear-gradient(to left, var(--grad-right) , var(--grad-left));
+  background-image: linear-gradient(
+    to left,
+    var(--grad-right),
+    var(--grad-left)
+  );
   left: 0;
   height: 100%;
   width: 50%;
@@ -394,18 +408,17 @@ body{
   align-items: center;
 }
 
-.prep-img{
+.prep-img {
   position: relative;
   padding-top: 3rem;
   height: 30rem;
-  filter: drop-shadow(0 0 2px black);
   bottom: 0;
   padding-left: 7rem;
   padding-right: 2rem;
 }
 
 /* RIGHT SIDE RECOMENDATIONS */
-.prep.right{
+.prep.right {
   justify-content: center;
   width: 50%;
   padding-top: 5rem;
@@ -416,21 +429,21 @@ body{
   padding-right: 9rem;
 }
 
-.prep-right-content h1{
+.prep-right-content h1 {
   font-size: 3rem;
   color: var(--navy-blue);
   font-weight: bolder;
   padding: 1rem;
 }
 
-.prep-right-content p{
+.prep-right-content p {
   font-size: 1.1rem;
   color: var(--grey);
   padding: 1rem;
 }
 
-.recomendation{
-  padding-bottom: .3rem;
+.recomendation {
+  padding-bottom: 0.3rem;
   box-shadow: 1px 1px 36px -7px var(--navy-blue);
 }
 
@@ -453,152 +466,289 @@ body{
 }
 
 .content {
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   display: none;
   overflow: hidden;
 }
 
 /*-----------------------EMERGENCY SECTION---------------*/
-.emergency-section{
+.emergency-section {
   padding-top: 2rem;
   display: flex;
   height: 100%;
   width: 100%;
   justify-content: space-around;
 }
-.emergency-left{
+.emergency-left {
   width: 50%;
   padding: 2rem;
 }
-.emergency-left h1{
+.emergency-left h1 {
   font-size: 3rem;
   color: var(--navy-blue);
   font-weight: bolder;
   padding: 1rem;
 }
-.emergency-left p{
+.emergency-left p {
   font-size: 1.1rem;
   color: var(--grey);
   padding: 1rem;
 }
-.emergency-cards{
+.emergency-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.emergency-card{
+.emergency-card {
   padding: 3rem;
   margin: 1rem;
   border: solid 1px var(--cool-blue-soft);
   width: 8rem;
-  border-radius: 1rem; 
+  border-radius: 1rem;
   box-shadow: 1px 1px 36px -20px var(--navy-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.card-title{
+.card-title {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
   color: var(--navy-blue);
 }
-.card-title p{
+.card-title p {
   color: var(--navy-blue);
   font-weight: bold;
   font-size: 1rem;
 }
-.emergency-card button{
+.emergency-card button {
   border: none;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--cool-blue-soft);
   color: var(--cool-blue);
-  border-radius: .5rem;
-  font-size: .9rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
   cursor: pointer;
 }
-.emergency-card button:hover{
+.emergency-card button:hover {
   background-color: var(--cool-blue);
   color: var(--cool-blue-soft);
-  transition: .4s;
+  transition: 0.4s;
 }
-.emergency-card:hover{
+.emergency-card:hover {
   box-shadow: 1px 1px 36px -10px var(--navy-blue);
   transform: scale(1.1);
-  transition: .5s;
+  transition: 0.5s;
 }
-.emergency-right{
+.emergency-right {
   display: flex;
   width: 50%;
-  background-image: linear-gradient(to left, var(--grad-right) , var(--grad-left));
+  background-image: linear-gradient(
+    to left,
+    var(--grad-right),
+    var(--grad-left)
+  );
   justify-content: center;
+  flex: 1;
 }
-.emergency-image{
-  height: 40rem;
+.emergency-image {
+  height: 45rem;
   position: relative;
   padding-top: 3rem;
-  filter: drop-shadow(0 0 2px black);
   bottom: 0;
 }
 
 /*------------------------FOOTER--------------------------*/
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   background-color: var(--cool-blue-soft);
   padding: 2rem 4rem;
 }
-.footer a, p{
+.footer a,
+p {
   text-decoration: none;
   color: var(--grey);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-.footer a:hover{
+.footer a:hover {
   color: #1f3e72;
 }
-.links{
+.links {
   display: flex;
   justify-content: space-between;
 }
-.links h1{
+.links h1 {
   font-size: 1.5rem;
   color: var(--cool-blue);
 }
-.links h2{
+.links h2 {
   font-size: 1.2rem;
   color: var(--navy-blue);
 }
-.links p{
+.links p {
   font-size: 1rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
-.footer-right{
+.footer-right {
   display: flex;
 }
-.footer-right-card{
+.footer-right-card {
   display: flex;
   flex-direction: column;
   padding-left: 4rem;
 }
-.footer-right-card a{
+.footer-right-card a {
   padding-top: 1rem;
 }
-.credits{
+.credits {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
   align-items: center;
 }
-.credits a{
+.credits a {
   padding-left: 2rem;
 }
 
+/*------------------------------------------------------SCHEDULE PAGE------------------------------------------------------------------*/
+section {
+  display: flex;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+.left-panel {
+  width: 50vw;
+  text-align: left;
+  padding: 3rem 10rem 3rem 10rem;
+}
+.left-panel h2 {
+  color: var(--carbon);
+  padding: 1rem 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+.left-panel input[type="text"] {
+  border: none;
+  border: solid 1px var(--cool-blue-soft);
+  width: 100%;
+  font-size: 1.4rem;
+  border-radius: 4px;
+}
+.left-panel input[type="text"]::placeholder {
+  color: rgb(199, 199, 199);
+  font-size: 0.9rem;
+}
+.left-panel .next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-panel button {
+  background-color: var(--cool-blue);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 40%;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.left-panel button:hover {
+  background-color: var(--carbon);
+  transition: 0.4s;
+}
+.right-panel {
+  width: 50vw;
+  padding-right: 4rem;
+}
+.month-selection {
+  display: flex;
+  justify-content: space-between;
+}
+.month-selection h1 {
+  color: var(--carbon);
+}
+.month-selection button {
+  background-color: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.4rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: solid 1px var(--cool-blue-soft);
+  border-radius: 5px;
+}
+.month-selection button:hover {
+  background-color: var(--blue);
+  color: white;
+  transition: 0.4s;
+}
+.right-panel ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+}
+.right-panel .calendar {
+  margin-top: 1rem;
+}
+.day-name {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--cool-blue-soft);
+  color: var(--cool-blue);
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.right-panel .day-name-last {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--cool-blue-soft);
+  color: var(--cool-blue);
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 5px;
+}
+.right-panel .day-name-first {
+  display: flex;
+  font-weight: bold;
+  background-color: var(--cool-blue-soft);
+  color: var(--cool-blue);
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 5px;
+}
+.first-day {
+  grid-column-start: 7;
+}
+.right-panel .day {
+  color: var(--navy-blue);
+  cursor: pointer;
+  height: 4rem;
+  text-align: right;
+  border: solid 1px var(--cool-blue-soft);
+}
+.right-panel .not-available {
+  background-color: rgb(255, 195, 195);
+  cursor: default;
+}
+.right-panel .previous-month {
+  color: var(--grey);
+  background-color: rgb(218, 218, 218);
+  cursor: default;
+}
 
 /*----------------------RESPONSIVE CONFIG----------------*/
 @media screen and (max-width: 900px) {
   /* NAVBAR */
-  .logo{
+  .logo {
     width: 9rem;
     padding-left: 2rem;
   }
@@ -613,14 +763,14 @@ body{
     padding-left: 2rem;
     padding-right: 1rem;
   }
-  .land-hello h1{
+  .land-hello h1 {
     font-size: 2rem;
   }
-  .land-hello p{
-    font-size: .7rem;
+  .land-hello p {
+    font-size: 0.7rem;
     color: var(--grey);
   }
-  .features{
+  .features {
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -629,7 +779,7 @@ body{
     height: 300px;
   }
   /* SCHEDULE BANNER */
-  .schedule-banner{
+  .schedule-banner {
     position: relative;
     bottom: 0rem;
     display: flex;
@@ -638,57 +788,57 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     border-radius: 10px;
-    box-shadow: 1px 13px 36px -7px rgba(0,0,0,0.72);
+    box-shadow: 1px 13px 36px -7px rgba(0, 0, 0, 0.72);
     background-color: rgba(255, 255, 255, 0.705);
   }
-  .schedule-msg h2{
+  .schedule-msg h2 {
     color: var(--navy-blue);
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     font-size: 1rem;
   }
-  .schedule-msg .fa-solid{
-    font-size: .7rem;
+  .schedule-msg .fa-solid {
+    font-size: 0.7rem;
     color: var(--cool-blue);
     background-color: var(--cool-blue-soft);
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 5px;
   }
-  .schedule-element{
-    padding-right: .4rem;
+  .schedule-element {
+    padding-right: 0.4rem;
   }
-  .schedule-element .element .fa-solid{
+  .schedule-element .element .fa-solid {
     color: var(--cool-blue);
     background-color: var(--cool-blue-soft);
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 5px;
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
-  .schedule-element .element h3{
+  .schedule-element .element h3 {
     color: var(--grey);
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     font-size: 1rem;
   }
-  .schedule-element h2{
+  .schedule-element h2 {
     color: var(--navy-blue);
-    font-size: .5rem;
+    font-size: 0.5rem;
     padding-left: 2rem;
   }
-  .appointment-btn{
+  .appointment-btn {
     padding-left: 1rem;
   }
-  .make-appointment{
-    font-size: .7rem;
+  .make-appointment {
+    font-size: 0.7rem;
     border: none;
     background-color: var(--blue);
     color: white;
     cursor: pointer;
-    padding: .75rem;
+    padding: 0.75rem;
     font-weight: bold;
     border-radius: 4px;
     box-shadow: 1px 1px 5px black;
   }
   /* VACCINE MAKERS SECTION */
-  .vaccine-makers img{
+  .vaccine-makers img {
     width: 5rem;
     filter: grayscale(100%);
     opacity: 40%;
@@ -699,7 +849,7 @@ body{
     padding-top: 2rem;
     padding-left: 1rem;
   }
-  .card{
+  .card {
     height: 14rem;
     width: 10rem;
     display: flex;
@@ -710,16 +860,16 @@ body{
     border-radius: 1rem;
     cursor: pointer;
     border: solid 1px #25698d70;
-  } 
-  .card i{
+  }
+  .card i {
     font-size: 1rem;
   }
-  
+
   .card h2 {
     font-size: 1.2rem;
   }
-  
-  .card p{
-    font-size: .9rem;
+
+  .card p {
+    font-size: 0.9rem;
   }
 }
